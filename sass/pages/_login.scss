@@ -1,0 +1,56 @@
+.login {
+    padding: 260px 0 160px 0;
+    .login__content {
+        text-align: center;
+        #loginform {
+            color: #565656;
+            label {
+                display: block;
+                font-family: Metropolis;
+            }
+            input[type=text] {
+                width: 300px;
+                padding: 6px 0;
+            }
+            input[type=password] {
+                width: 300px;
+                padding: 6px 0;
+            }
+            input[type=submit] {
+                width: 300px;
+                background-color: $laranja;
+                color: #fff;
+                border: 0;
+                padding: 6px 0;
+            }
+        }
+        form {
+            color: #565656;
+            label {
+                display: block;
+                font-family: Metropolis;
+                margin-top: 12px;
+            }
+            input[type=text] {
+                width: 300px;
+                padding: 6px 0;
+            }
+            input[type=email] {
+                width: 300px;
+                padding: 6px 0;
+            }
+            input[type=password] {
+                width: 300px;
+                padding: 6px 0;
+            }
+            input[type=submit] {
+                width: 300px;
+                background-color: $laranja;
+                color: #fff;
+                border: 0;
+                padding: 6px 0;
+                margin-top: 12px;
+            }
+        }
+    }
+}

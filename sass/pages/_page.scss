@@ -1,0 +1,207 @@
+#conteudo {
+    margin-top: 120px;
+    padding: 80px 20px;
+    color: #272727;
+    font-size: 40px;
+    text-align: justify;
+    h1 {
+        font-size: 30px;
+        color: $azul;
+    }
+    .divider {
+        background-color: $azul;
+        width: 50%;
+        height: 2px;
+        margin-bottom: 40px;
+    }
+    h2 {
+        color: $azul;
+        font-size: 24px;
+    }
+    p {
+        font-family: Metropolis-light;
+        font-size: 18px;
+    }
+}
+#ctbm__banner {
+    height: 180px;
+    padding-top: 160px;
+    background-image: url('img/bg-ctbm.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: #fff;
+    h2 {
+        font-size: 20px;
+        text-shadow: 2px 2px 12px #272727;
+        display: inline;
+    }
+    h3 {
+        display: inline;
+        font-family: DeadIsland;
+        font-size: 22px;
+        text-shadow: 2px 2px 12px #272727;
+    }
+    button {
+        padding: 8px 30px;
+        border-radius: 50px;
+        background-color: #0000ff;
+        color: #fff;
+        border:0;
+        font-size: 18px;
+        font-family: Metropolis-light;
+        text-transform: uppercase;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+.tela5 {
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 120px;
+    h2{
+        font-size: 20px;
+        color: $azul;
+    }
+    h3 {
+        font-size: 26px;
+        margin: 0;
+        color: $azul;
+    }
+    form {
+        margin-top: 60px;
+        input {
+            background-color: #fff;
+            width: 80%;
+            height: 40px;
+            margin-bottom: 10px;
+            text-align: center;
+            border-radius: 30px;
+            color: $laranja;
+            font-size: 18px;
+            box-shadow: 1px 2px 16px #575757;
+            border: 2px $laranja solid;
+        }
+        input::placeholder {
+            color: $laranja;
+            font-weight: 100;
+            font-family: Metropolis-light;
+            color: #575757;
+        }
+        button {
+            padding: 8px 60px;
+            border-radius: 50px;
+            background-color: $laranja;
+            color: #fff;
+            border:0;
+            font-size: 18px;
+            font-family: Metropolis-light;
+            text-transform: uppercase;
+            margin-bottom: 80px;
+            margin-top: 0;
+        }
+    }
+    h4 {
+        color: $laranja;
+        font-size: 20px;
+        display: inline;
+    }
+    h5 {
+        color: $azul;
+        font-size: 36px;
+        display: inline;
+    }
+    button {
+        padding: 8px 20px;
+        border-radius: 50px;
+        background-color: $laranja;
+        color: #fff;
+        border:0;
+        font-size: 16px;
+        font-family: Metropolis-light;
+        text-transform: uppercase;
+        margin-top: 30px;
+        margin-bottom: 80px;
+    }
+}
+
+@media (min-width: $bp-md) {
+    #conteudo {
+        padding: 120px 30px;
+        margin-top: 180px;
+    }
+    #ctbm__banner {
+        height: 340px;
+        h2 {
+            font-size: 30px;
+        }
+        h3 {
+            font-size: 30px;
+        }
+        button {
+            margin: 0 auto;
+            margin-top: 60px;
+            display: block;
+        }
+    }
+    .tela5{
+        h2 {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (min-width: $bp-lg) {
+    #conteudo {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 90px;
+        padding: 120px 0;
+    }
+    #ctbm__banner {
+        height: 500px;
+        padding-top: 240px;
+        h2 {
+            font-size: 40px;
+        }
+        h3 {
+            font-size: 42px;
+        }
+    }
+    .tela5{ 
+        h2 {
+            font-size: 40px;
+        }
+        form input {
+            width: 60%;
+        }
+    }
+    .chamar-wpp a {
+        width: 420px;
+    }
+}
+
+@media (min-width: $bp-xl) {
+    #conteudo {
+        width: 60%;
+    }
+    #ctbm__banner {
+        height: 1000px;
+        padding-top: 400px;
+        h2 {
+            font-size: 50px;
+        }
+        h3 {
+            font-size: 53px;
+        }
+    }
+    .tela5 {
+        form input {
+            width: 40%;
+        }
+        form button {
+            margin-top: 40px;
+        }
+    }
+}

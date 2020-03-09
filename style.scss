@@ -1,0 +1,28 @@
+/*
+Theme Name: Tiradentes New Life
+Author: Lucas Goulart | Grupo New Life
+*/
+
+// Base
+@import 'sass/base/breakpoints';
+@import 'sass/base/cores';
+@import 'sass/base/fonts.scss';
+@import 'sass/base/normalize';
+@import 'sass/base/reset';
+
+// Components
+@import 'sass/components/form';
+
+// Layout
+@import 'sass/layout/cabecalho';
+@import 'sass/layout/rodape';
+@import 'sass/layout/landing';
+
+// Pages
+@import 'sass/pages/index';
+@import 'sass/pages/page';
+@import 'sass/pages/login';
+
+// Vendors
+@import 'sass/vendors/slick';
+@import 'sass/vendors/slick-theme';
