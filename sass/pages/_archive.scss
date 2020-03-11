@@ -1,0 +1,67 @@
+.archive {
+    width: 90%;
+    margin: 0 auto;
+    font-family: metropolis;
+    padding: 180px 0 80px 0;
+    h2 {
+        color: $azul;
+        margin-bottom: 40px;
+        a {
+            color: $azul;
+        }
+    }
+    &__item {
+        box-shadow: 0px 1px 16px 0px rgb(194, 194, 194);
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 60px;
+        h2:hover {
+            text-decoration: underline;
+        }
+        p.professor-name {
+            color: #9c9c9c;
+        }
+        h3 a {
+            color: #fff;
+            background-color: $azul;
+            font-family: metropolis;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-size: 12px;
+            font-family: metropolis;
+            font-weight: 100;
+        }
+        h3 a:hover {
+            box-shadow: 0px 1px 16px 0px rgb(194, 194, 194);
+        }
+        p {
+            margin-bottom: 30px;
+            color: #303030;
+        }
+        a.ver-mais {
+            color: $azul;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .archive {
+        width: 800px;
+        overflow: auto;
+        padding: 180px 10px 80px 10px;
+        &__item {
+            width: 320px;
+            float: left;
+            height: 470px;
+            margin-right: 40px;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .archive {
+        padding: 240px 10px 80px 10px;
+        width: 1200px;
+    }
+}
