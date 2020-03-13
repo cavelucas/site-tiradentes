@@ -19,9 +19,21 @@
     
     /* Redireciona o cliente após o login */
 
-    function login_redirect( $redirect_to, $request, $user ){
-        return home_url('index.php/aulas');
+    function my_login_redirect( $redirect_to, $request, $user ) {
+        //is there a user to check?
+        if ( isset( $user->roles ) && is_array( $user->roles ) ) {
+            //check for admins
+            if ( in_array( 'author', $user->roles ) ) {
+                // redirect them to the default place
+                return $redirect_to;
+            } else {
+                return home_url('index.php/aulas');
+            }
+        } else {
+            return $redirect_to;
+        }
     }
-    add_filter( 'login_redirect', 'login_redirect', 10, 3 );
+     
+    add_filter( 'login_redirect', 'my_login_redirect', 10, 3 );
 
 ?>
